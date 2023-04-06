@@ -40,7 +40,6 @@
 }
 .header .nav .navLink .logo .navMenu .navMenuItems .navMenuLink .navMenuLink:hover .menuHamburguesa {
   position: absolute;
-  width: 10px;
   top: 4rem;
   right: 3rem;
   cursor: pointer;
@@ -306,13 +305,16 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
-  .footer .grupo1 {
+  .logo {
+    position: relative;
+  }
+  .logo .footer .grupo1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 50px;
     padding: 45px 0;
   }
-  .footer .grupo1 .nav {
+  .logo .footer .grupo1 .nav {
     display: block;
     position: absolute;
     top: 20px;
@@ -327,26 +329,26 @@ h3 {
     align-items: center;
     transition: top 1s ease;
   }
-  .footer .grupo1 .nav .menuHamburguesa {
+  .logo .footer .grupo1 .nav .menuHamburguesa {
     display: none;
   }
-  .footer .grupo1 .nav .menuHamburguesa .navMenu {
+  .logo .footer .grupo1 .nav .menuHamburguesa .navMenu {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
   }
-  .footer .grupo1 .nav .menuHamburguesa .navMenu .formulario {
+  .logo .footer .grupo1 .nav .menuHamburguesa .navMenu .formulario {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .footer .grupo1 .nav .menuHamburguesa .navMenu .formulario .consultas {
+  .logo .footer .grupo1 .nav .menuHamburguesa .navMenu .formulario .consultas {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .footer .grupo1 .nav .menuHamburguesa .navMenu .formulario .consultas .grid-subContainer {
+  .logo .footer .grupo1 .nav .menuHamburguesa .navMenu .formulario .consultas .grid-subContainer {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;

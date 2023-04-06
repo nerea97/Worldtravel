@@ -1,49 +1,50 @@
-.header{
-    background-color: rgb(110, 107, 107);
-    height: 180px;
-    width: 100%;
+header{
+    background-color: gray;
 
     .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
+        height: 250px;
 
-        .navLink{
-            color: white;
-            text-decoration: none;
+        .nav_container{
+            display: flex;
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+            align-items: center;
 
-            .logo{
-                height: 180px;
-                width: 180px;
+            .nav_input:checked + .nav_menu{
+                background-color: #0a141d;
 
-                .navMenu{
-                    display: flex;
-                    margin-right: 40px;
-                    align-items: center;
+                .nav_label{
+                    display: none;
 
-                    .navMenuItems{
-                        font-size: 20px;
-                        margin: 0px 10px;
-                        text-transform: uppercase;
-                        width: max-content;
+                    .nav_input{
+                        display: none;
 
-                        .navMenuLink{
-                            padding: 8px 12px;
-                            border-radius: 50px;
-                            transition: 0.5s;
+                    .nav_menu{
+                        display: grid;
+                        grid-auto-flow: column;
+                        gap: 20px;
 
-                            .navMenuLink:hover{
-                                background-color: rgb(136, 218, 245);
-                                color: rgb(243, 91, 91);
+                        .nav_item{
+                            color: #fff;
+                            font-size: 30px;
+                            text-decoration: none;
+                            --clippy: polygon(0 1%, 0 0, 0 100%, 0% 100%);
+                        
+                            .nav_item::after{
+                                content: '';
+                                display: block;
+                                background: #fff;
+                                width: 90%;
+                                margin-top: 3px;
+                                height: 3px;
+                                clip-path: var(--clippy);
+                                transition: clip-path .5s;
 
-                                .menuHamburguesa{
-                                    position: absolute;
-                                    width: 10px;
-                                    top: 4rem;
-                                    right: 3rem;
-                                    cursor: pointer;
-                                    filter: (1);
+                                .nav_item:hover{
+                                    --clippy: polygon(0 1%, 100% 0, 100% 100%, 0 100%);
+                                    }
                                 }
                             }
                         }
