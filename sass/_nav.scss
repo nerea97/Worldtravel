@@ -1,0 +1,55 @@
+.header{
+    background-color: rgb(110, 107, 107);
+    height: 180px;
+    width: 100%;
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        max-width: 992px;
+        margin: 0 auto;
+
+        .navLink{
+            color: white;
+            text-decoration: none;
+
+            .logo{
+                height: 180px;
+                width: 180px;
+
+                .navMenu{
+                    display: flex;
+                    margin-right: 40px;
+                    align-items: center;
+
+                    .navMenuItems{
+                        font-size: 20px;
+                        margin: 0px 10px;
+                        text-transform: uppercase;
+                        width: max-content;
+
+                        .navMenuLink{
+                            padding: 8px 12px;
+                            border-radius: 50px;
+                            transition: 0.5s;
+
+                            .navMenuLink:hover{
+                                background-color: rgb(136, 218, 245);
+                                color: rgb(243, 91, 91);
+
+                                .menuHamburguesa{
+                                    position: absolute;
+                                    width: 10px;
+                                    top: 4rem;
+                                    right: 3rem;
+                                    cursor: pointer;
+                                    filter: (1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
