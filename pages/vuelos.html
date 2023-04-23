@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vuelos</title>
     <meta name="description" content="Todo lo que buscas para tu viaje en una sola pagina.">
-    <meta name="keywords" content="viajes, hoteles, vuelos, excursiones, traslados, pasajes, boletos, aviones, aerolineas">
+    <meta name="keywords" content="viajes, vuelos, traslados, pasajes, boletos, aviones, aerolineas, aeropuertos, vuela">
     <link rel="shortcut icon" href="../images/logo_favicon.png" type="image/x-icon">
-    <!---link sass-->
-    <link rel="stylesheet" href="./sass/main.css">
     <!---link css-->
     <link rel="stylesheet" href="../css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,25 +23,24 @@
                 <a href="../index.html">
                     <img src="../images/LogoWorldTravel.png" alt="logo">
                 </a>
-                </div>
-                <label class="nav_label" for="menu">
-                    <svg class="bi bi-list" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                </label>
-                <input class="nav_input" type="checkbox" id="menu">
-                <div class="nav_menu">
-                    <a class="nav_item" href="../pages/checkin.html">Check In</a>
-                    <a class="nav_item" href="../pages/vuelos.html">Vuelos</a>
-                    <a class="nav_item" href="../pages/hoteles.html">Hoteles</a>
-                    <a class="nav_item" href="../pages/nosotros.html">Nosotros</a>
-                </div>
+            </div>
+            <label class="nav_label" for="menu">
+                <svg class="bi bi-list" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </label>
+            <input class="nav_input" type="checkbox" id="menu">
+            <div class="nav_menu">
+                <a class="nav_item" href="../pages/checkin.html">Check In</a>
+                <a class="nav_item" href="../pages/vuelos.html">Vuelos</a>
+                <a class="nav_item" href="../pages/hoteles.html">Hoteles</a>
+                <a class="nav_item" href="../pages/nosotros.html">Nosotros</a>
             </div>
         </nav>
     </header>
     <main>
         <h1>ESTADO DE VUELO</h1>
-        <h2>CONSULTA AQUI EL ESTADO DE TU VUELO</h2>
+        <h2 class="h2_vuelos">CONSULTA AQUI EL ESTADO DE TU VUELO</h2>
         <section class="form-vuelos">
             <input type="text" name="CodigoDeReserva" placeholder="Ingresa Codigo de Reserva">
             <input type="text" name="NombreApellido" placeholder="Ingresa Nombre y Apellido">
@@ -53,12 +50,12 @@
         </section>
         <h3 class="vuelo">LAS MEJORES AEROLINEAS DEL MUNDO</h3>
         <section class="aerolineas">
-            <img src="../images/AerolineasArgentinas.png" alt="aerolineasArgentinas" width="350px" height="450px">
-            <img src="../images/FlyBondi.jpg" alt="flyBondi" width="350px" height="450px">
-            <img src="../images/JETSMART.jpg" alt="jetSmart" width="350px" height="450px">
-            <img src="../images/Latam.png" alt="latam" width="350px" height="450px">
-            <img src="../images/Lufthansa.jpg" alt="lufthansa" width="350px" height="450px">
-            <img src="../images/qatar.jpg" alt="qatar" width="350px" height="450px">
+            <img src="../images/AerolineasArgentinas.png" class="img-thumbnail" alt="aerolineasArgentinas">
+            <img src="../images/FlyBondi.jpg" class="img-thumbnail" alt="flybondi">
+            <img src="../images/JETSMART.jpg" class="img-thumbnail" alt="jetsmart">
+            <img src="../images/Latam.png" class="img-thumbnail" alt="LATAM">
+            <img src="../images/Lufthansa.jpg" class="img-thumbnail" alt="Lufthansa">
+            <img src="../images/qatar.jpg" class="img-thumbnail" alt="qatar">
         </section>
     </main>
     <footer class="footer">
