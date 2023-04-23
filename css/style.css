@@ -144,6 +144,11 @@ header{
     align-items: center;
 }
 
+.info {
+    overflow-y: hidden;
+}
+
+
 .formConsulta{
     padding: 10px;
 }
@@ -268,6 +273,22 @@ main section span{
     display: grid;
     grid-template-columns: 1fr;
     grid-row: auto;
+}
+
+h2{
+    overflow-y: hidden;
+}
+
+h3{
+    overflow-y: hidden;
+}
+
+h4{
+    overflow-y: hidden;
+}
+
+h5{
+    overflow-y: hidden;
 }
 
 /*---------Page Nosotros---------*/
